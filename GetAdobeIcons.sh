@@ -2,7 +2,7 @@
 
 [ -z "$1" ] && echo "This script requires a path to output the app icons in PNG format."
 
-# Uses /usr/bin/sips to copy the app icon out of the App bundle for each of the Adobe CC products
+# Use /usr/bin/sips to copy the app icon out of the App bundle for each of the Adobe CC products
 # and convert into png format
 
 # Acrobat DC
