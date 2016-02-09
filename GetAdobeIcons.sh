@@ -23,6 +23,15 @@ if [[ -d "$APP" ]]; then
 	/usr/bin/sips -s format png "$APP/Contents/Resources/$APP_ICON" --out "$1/$OUTPUT_PNG"
 fi
 
+# Animate CC
+APP="/Applications/Adobe Animate CC 2015/Adobe Animate CC 2015.app"
+APP_ICON="appIcon.icns"
+OUTPUT_PNG="AdobeAnimateCC.png"
+
+if [[ -d "$APP" ]]; then
+	/usr/bin/sips -s format png "$APP/Contents/Resources/$APP_ICON" --out "$1/$OUTPUT_PNG"
+fi
+
 # Audition CC
 APP="/Applications/Adobe Audition CC 2015/Adobe Audition CC 2015.app"
 APP_ICON="appIcon.icns"
@@ -230,4 +239,3 @@ OUTPUT_PNG="AdobeSpeedGradeCC.png"
 if [[ -d "$APP" ]]; then
 	/usr/bin/sips -s format png "$APP/Contents/Resources/$APP_ICON" --out "$1/$OUTPUT_PNG"
 fi
-
